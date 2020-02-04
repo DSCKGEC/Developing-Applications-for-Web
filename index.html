@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div class="container">
+                <a href="/" class="brand">Web Dashboard 0.1</a>
+                <ul>
+                    <li>
+                        <a href="#" class="active navlink ">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navlink">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navlink">Purchase</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Welcome User</h1>
+            <div class="section-container">
+                <section>
+                    <h2>Turn on and off things</h2>
+                    <div class="buttons_list" id="buttons_list">
+                        <div class="button_container">
+                            <h3>Light 01</h3>
+                            <button>Turn on</button>
+                        </div>
+                        <div class="button_container">
+                            <h3>Light 02</h3>
+                            <button>Turn on</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="weather">
+                    <h2>Weather near me</h2>
+                    <div class="weather_item">
+                        <p id="temp">22&deg;C</p>
+                    </div>
+                    <div class="weather_item">
+                        <p id="condition">Sunny</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Set Values</h2>
+                    <div class="slider_list" id="slider_container">
+                        <div class="slider_container">
+                            <h3>Item 01 - <strong>17</strong> </h3>
+                            <input type="range" min="0" max="100" value="17">
+                        </div>
+                        <div class="slider_container">
+                            <h3>Item 02 - <strong>71</strong> </h3>
+                            <input type="range" min="0" max="100" value="71">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
